@@ -32,13 +32,13 @@ export default function randomPhrase(value) {
   const userName = Meteor.user().services.github.username;
   const score = Meteor.user().profile.score + value;
   return ([
-    `${userName} has closed another
-     ${randomAdjective()} issue and now has ${score} points!`,
-    `${userName} is making github great again!
-     ${score} points.`,
-    `${userName} is feeling the bern!
-     ${score} points.`,
-    `Another one bites the dust. ${userName} AKA:
-     "Issue Assasin" strikes again for ${score} points`,
+    `${userName} has closed another ` +
+    `${randomAdjective()} issue and now has ${score} points!`,
+    `${userName} is making github great again! ` +
+    `${score} points.`,
+    `${userName} is feeling the bern! ` +
+    `${score} points.`,
+    `Another one bites the dust. ${userName} AKA: ` +
+    `"Issue Assasin" strikes again for ${score} points`,
   ][Math.floor(Math.random() * 4)]);
 }
