@@ -1,11 +1,17 @@
 import React from 'react';
-
+import { Meteor } from 'meteor/meteor';
+import AppBody from './AppBody.jsx';
+import AppBar from './AppBar.jsx';
+import getCommits from '../../../imports/modules/getCommits'
 export default function App() {
   return (
-    <h1 style={{ color: 'black', background: 'white' }}>
-      React is working!
-      <br />
-      (find me at ./client/imports/components/App.jsx)
-    </h1>
+    <div>
+      <div className='app-bar'>
+        <AppBar />
+      </div>
+      <div className='app-body'>
+        <AppBody />
+      </div>
+    </div>
   );
 }

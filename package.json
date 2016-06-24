@@ -11,10 +11,12 @@
   "dependencies": {
     "lodash": "^4.13.1",
     "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.13.0",
     "param-store": "^1.0.0",
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-markdown": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
